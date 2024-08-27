@@ -2,11 +2,14 @@ package com.pedro.pedidosApi.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.pedro.pedidosApi.entity.enums.Status;
+import lombok.Data;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+@Data
 public class Pedido {
 
     private UUID id = UUID.randomUUID();
@@ -15,11 +18,11 @@ public class Pedido {
     private Integer valorTotal;
     private String emailNotificacao;
 
-    private List<ItemPedido> itemPedidos;
+    private List<ItemPedido> itens = new ArrayList<>();
 
-    private Status status;
+    private Status status = Status.EM_PROCESSAMENTO;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime dataHora;
+    private LocalDateTime dataHora = LocalDateTime.now();
 
 }
