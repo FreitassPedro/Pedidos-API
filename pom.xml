@@ -71,6 +71,21 @@
 
 	<build>
 		<plugins>
+			<!-- Plugin para construir o JAR -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.0</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!-- Plugin para construir o JAR com Spring Boot -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -85,5 +100,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>

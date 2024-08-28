@@ -8,11 +8,10 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: 'rabbitmq'
       RABBITMQ_DEFAULT_PASS: 'rabbitmq'
-
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
       - rabbitmq_log:/var/log/rabbitmq
 
 volumes:
-    rabbitmq_data:
-    rabbitmq_log:
+  rabbitmq_data:
+  rabbitmq_log:
