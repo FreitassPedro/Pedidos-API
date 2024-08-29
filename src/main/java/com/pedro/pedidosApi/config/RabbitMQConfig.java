@@ -51,6 +51,7 @@ public class RabbitMQConfig {
     public RabbitTemplate rabbitTemplate(ConnectionFactory connectionFactory, MessageConverter messageConverter) {
         RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
         rabbitTemplate.setMessageConverter(messageConverter);
+
         return rabbitTemplate;
     }
 
@@ -65,6 +66,9 @@ public class RabbitMQConfig {
         return event -> {
             log.info(" ---------------------- RabbitAdmin inicializado...");
             rabbitAdmin.initialize();
+            rabbitAdmin.declareExchange(pedidosExchange());
+
+
         };
     }
 }
