@@ -20,7 +20,7 @@ public class Pedido {
 
     private List<ItemPedido> itens = new ArrayList<>();
 
-    private Status status = Status.EM_PROCESSAMENTO;
+    private Status status;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime dataHora = LocalDateTime.now();

@@ -1,16 +1,19 @@
 services:
   rabbitmq:
     image: rabbitmq:3.10.5-management
+    container_name: rabbitmq
     ports:
       - '15672:15672'
       - '5672:5672'
-    container_name: rabbitmq
     environment:
-      RABBITMQ_DEFAULT_USER: 'rabbitmq'
-      RABBITMQ_DEFAULT_PASS: 'rabbitmq'
+      RABBITMQ_DEFAULT_USER: rabbitmq
+      RABBITMQ_DEFAULT_PASS: rabbitmq
+      RABBITMQ_CONFIG_FILE: /etc/rabbitmq/rabbitmq.conf
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
       - rabbitmq_log:/var/log/rabbitmq
+
+      - ./rabbitmq-init.sh:/docker-entrypoint-initdb.d/rabbitmq-init.sh
 
 volumes:
   rabbitmq_data:
