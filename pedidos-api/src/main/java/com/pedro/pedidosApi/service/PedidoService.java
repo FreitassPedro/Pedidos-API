@@ -30,12 +30,8 @@ public class PedidoService {
 
     public Pedido enfileirarPedido(Pedido pedido) {
         pedido.setStatus(Status.EM_PROCESSAMENTO);
-        try {
         rabbitTemplate.convertAndSend(exchangeName, "", pedido);
         log.info("Enfileirando pedido: {}", pedido.toString());
-        } catch (Exception e) {
-            log.error("Erro ao enfileirar pedido: {}", e.getMessage());
-        }
         return pedido;
     }
 }

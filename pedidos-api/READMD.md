@@ -11,3 +11,7 @@ Invoke-WebRequest -Uri "http://localhost:15672/api/exchanges/%2f/pedidos.v1.pedi
 
 # Problemas Conectividade
 Problemas com conectividade entre os containers e o Spring Boot, verifique se o container do RabbitMQ está rodando e se o Spring Boot está conseguindo se conectar a ele. Para isso, verifique o arquivo application.properties do Spring Boot, desative manualmente o RabbitMQ no Services
+
+
+# Serviço Email
+Serviço de disparo de e-mail será o (https://github.com/mailhog/MailHog)[MailHog]. Por hora, é apenas simulações, mas opte por utilizar outros serviços mais profissionais como Simple Email Service (AWS) ou SendGrid.
