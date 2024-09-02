@@ -2,6 +2,7 @@ services:
   rabbitmq:
     container_name: rabbitmq
     image: rabbitmq:3.10.5-management
+
     ports:
       - '15672:15672'  # Porta para o console de gerenciamento do RabbitMQ
       - '5672:5672'    # Porta para AMQP

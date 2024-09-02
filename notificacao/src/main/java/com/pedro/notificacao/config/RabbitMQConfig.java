@@ -1,9 +1,9 @@
-package com.pedro.pedidosApi.config;
+package com.pedro.notificacao.config;
 
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.amqp.core.Exchange;
+import org.springframework.amqp.core.Binding;
+import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.FanoutExchange;
-import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
+import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitAdmin;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -15,57 +15,48 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Slf4j
 @Configuration
 public class RabbitMQConfig {
 
-    // Definido no application.properties
     @Value("${rabbitmq.exchange.name}")
     private String exchangeName;
+    @Value("${rabbitmq.queue.name}")
+    private String queueName;
 
-    // Criação de um exchange do tipo Fanout
-    // Fanout: envia a mensagem para todas as filas que estão ligadas a ele
     @Bean
-    public Exchange pedidosExchange() {
-        Exchange exchange = new FanoutExchange(exchangeName);
-        log.info("Exchange criado: {}", exchangeName);
-        return exchange;
+    public FanoutExchange pedidosExchange() {
+        return new FanoutExchange(exchangeName);
     }
 
-    // Criação de um RabbitAdmin para gerenciar as configurações do RabbitMQ
-    // O RabbitAdmin é uma classe que facilita a configuração de elementos do RabbitMQ
+    @Bean
+    public Queue notificacaoQueue() {
+        return new Queue(queueName);
+    }
+
+    @Bean
+    public Binding binding() {
+        return BindingBuilder.bind(notificacaoQueue()).to(pedidosExchange());
+    }
+
     @Bean
     public RabbitAdmin rabbitAdmin(ConnectionFactory connectionFactory) {
         return new RabbitAdmin(connectionFactory);
     }
 
-    // Configuração do MessageConverter para serializar e deserializar as mensagens
-    // O Jackson2JsonMessageConverter é um MessageConverter que converte objetos para JSON
     @Bean
     public MessageConverter messageConverter() {
         return new Jackson2JsonMessageConverter();
     }
 
-    // Envia e recebe mensagens do RabbitMQ
     @Bean
     public RabbitTemplate rabbitTemplate(ConnectionFactory connectionFactory, MessageConverter messageConverter) {
         RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
         rabbitTemplate.setMessageConverter(messageConverter);
-
         return rabbitTemplate;
     }
 
-
-    /**
-     * Configura o RabbitMQ imediatamente após a aplicação inicializar
-     * @param rabbitAdmin
-     * @return
-     */
     @Bean
-    public ApplicationListener<ApplicationReadyEvent> applicationReadyEventApplicationListener(RabbitAdmin rabbitAdmin){
-        return event -> {
-            log.info(" ---------------------- RabbitAdmin inicializado...");
-            rabbitAdmin.initialize();
-        };
+    public ApplicationListener<ApplicationReadyEvent> applicationReadyEventApplicationListener(RabbitAdmin rabbitAdmin) {
+        return event -> rabbitAdmin.initialize();
     }
 }
