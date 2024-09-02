@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1653806c-8f9b-479a-a70f-a3e05c2405ed" name="Changes" comment="">
+    <list default="true" id="1653806c-8f9b-479a-a70f-a3e05c2405ed" name="Changes" comment=":spearkles: feat: Mapeamento Classes JPA&#10;&#10;- Mapeando ItemPedido, Pedido, Produto&#10;- Antes de Salvar no banco">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/processador/src/main/java/com/pedro/pedidos/processador/entity/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/processador/src/main/java/com/pedro/pedidos/processador/entity/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notificacao/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notificacao/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processador/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/processador/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -70,7 +70,7 @@
       <recent name="C:\Users\jogui\Documents\Programando\Java\Projetos pedidosApi\notificacao\src\main\java\com\pedro\notificacao" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.pedro.pedidos.processador.ProcessadorApplication">
+  <component name="RunManager" selected="Application.PedidosApiApplication">
     <configuration name="NotificacaoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pedro.notificacao.NotificacaoApplication" />
       <module name="notificacao" />
@@ -90,19 +90,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.pedro.pedidosApi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProcessadorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.pedro.pedidos.processador.processador.ProcessadorApplication" />
-      <module name="processador" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.pedro.pedidos.processador.processador.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,7 +127,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.com.pedro.pedidos.processador.ProcessadorApplication" />
-        <item itemvalue="Application.ProcessadorApplication" />
         <item itemvalue="Application.NotificacaoApplication" />
         <item itemvalue="Application.PedidosApiApplication" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
@@ -156,6 +142,35 @@
       <option name="presentableId" value="Default" />
       <updated>1724711593256</updated>
     </task>
+    <task id="LOCAL-00001" summary=":spearkles: feat: Mapeamento Classes JPA&#10;&#10;- Mapeando ItemPedido, Pedido, Produto&#10;- Antes de Salvar no banco">
+      <option name="closed" value="true" />
+      <created>1725313462297</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1725313462298</updated>
+    </task>
+    <task id="LOCAL-00002" summary=":spearkles: feat: Mapeamento Classes JPA&#10;&#10;- Mapeando ItemPedido, Pedido, Produto&#10;- Antes de Salvar no banco">
+      <option name="closed" value="true" />
+      <created>1725313498660</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725313498660</updated>
+    </task>
+    <task id="LOCAL-00003" summary=":spearkles: feat: Mapeamento Classes JPA&#10;&#10;- Mapeando ItemPedido, Pedido, Produto&#10;- Antes de Salvar no banco">
+      <option name="closed" value="true" />
+      <created>1725313514211</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725313514211</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=":spearkles: feat: Mapeamento Classes JPA&#10;&#10;- Mapeando ItemPedido, Pedido, Produto&#10;- Antes de Salvar no banco" />
+    <option name="LAST_COMMIT_MESSAGE" value=":spearkles: feat: Mapeamento Classes JPA&#10;&#10;- Mapeando ItemPedido, Pedido, Produto&#10;- Antes de Salvar no banco" />
   </component>
 </project>
