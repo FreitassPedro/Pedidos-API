@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1653806c-8f9b-479a-a70f-a3e05c2405ed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificacao/src/main/java/com/pedro/notificacao/listener/PedidoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/notificacao/src/main/java/com/pedro/notificacao/listener/PedidoListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificacao/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notificacao/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="1653806c-8f9b-479a-a70f-a3e05c2405ed" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,10 +50,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jogui/Documents/Programando/Java/Projetos pedidosApi/notificacao/src/main/java/com/pedro/notificacao",
+    "last_opened_file_path": "C:/Users/jogui/Documents/Programando/Java/Projetos pedidosApi/processador",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "promo.profiler"
   }
 }]]></component>
@@ -67,7 +62,7 @@
       <recent name="C:\Users\jogui\Documents\Programando\Java\Projetos pedidosApi\notificacao\src\main\java\com\pedro\notificacao" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NotificacaoApplication">
+  <component name="RunManager" selected="Application.ProcessadorApplication">
     <configuration name="NotificacaoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pedro.notificacao.NotificacaoApplication" />
       <module name="notificacao" />
@@ -94,6 +89,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProcessadorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pedro.pedidos.processador.processador.ProcessadorApplication" />
+      <module name="processador" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pedro.pedidos.processador.processador.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -110,6 +118,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProcessadorApplication" />
         <item itemvalue="Application.NotificacaoApplication" />
         <item itemvalue="Application.PedidosApiApplication" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
