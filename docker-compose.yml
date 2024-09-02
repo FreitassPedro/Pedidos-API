@@ -12,8 +12,6 @@ services:
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq  # Persistência de dados
       - rabbitmq_logs:/var/log/rabbitmq  # Logs do RabbitMQ
-    networks:
-      - mynetwork
 
 
   mailhog:
@@ -23,12 +21,20 @@ services:
       - '1025:1025'  # Porta para SMTP
       - '8025:8025'  # Porta para o console de gerenciamento do MailHog (interface web)
 
-networks:
-  mynetwork:
-    driver: bridge
+
+  postgres:
+    image: postgres:16
+    restart: unless-stopped
+    container_name: postgresql-16
+    environment:
+      POSTGRES_USER: postgres  # Defina o usuário postgres
+      POSTGRES_PASSWORD: postgres  # Defina a senha do usuário postgres
+    ports:
+      - '5432:5432'  # Porta para o PostgreSQL
+    volumes:
+        - .postgres_data:/var/lib/postgresql/data
+
 
 volumes:
   rabbitmq_data:
-    driver: local
   rabbitmq_logs:
-    driver: local
