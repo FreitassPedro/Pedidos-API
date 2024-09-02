@@ -23,15 +23,6 @@ public class RabbitMQConfig {
     @Value("${rabbitmq.exchange.name}")
     private String exchangeName;
 
-    @Value("${spring.rabbitmq.host}")
-    private String rabbitHost;
-
-    @Value("${spring.rabbitmq.username}")
-    private String rabbitUsername;
-
-    @Value("${spring.rabbitmq.password}")
-    private String rabbitPassword;
-
     // Criação de um exchange do tipo Fanout
     // Fanout: envia a mensagem para todas as filas que estão ligadas a ele
     @Bean
@@ -64,25 +55,20 @@ public class RabbitMQConfig {
         return rabbitTemplate;
     }
 
+
     /**
      * Configura o RabbitMQ imediatamente após a aplicação inicializar
-     * 
      * @param rabbitAdmin
      * @return
      */
     @Bean
-    public ApplicationListener<ApplicationReadyEvent> applicationReadyEventApplicationListener(
-            RabbitAdmin rabbitAdmin, Exchange pedidosExchange) {
+    public ApplicationListener<ApplicationReadyEvent> applicationReadyEventApplicationListener(RabbitAdmin rabbitAdmin){
         return event -> {
             log.info(" ---------------------- RabbitAdmin inicializado...");
-            try {
-                rabbitAdmin.declareExchange(pedidosExchange);
-                log.info("Exchange '{}' criada com sucesso.", pedidosExchange.getName());
-            } catch (Exception e) {
-                log.error("Erro ao criar a exchange '{}': {}", pedidosExchange.getName(), e.getMessage());
-            }
+            rabbitAdmin.initialize();
+            rabbitAdmin.declareExchange(pedidosExchange());
+
+
         };
     }
-
-
 }

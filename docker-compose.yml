@@ -1,20 +1,25 @@
 services:
   rabbitmq:
-    image: rabbitmq:3.10.5-management
     container_name: rabbitmq
+    image: rabbitmq:3.10.5-management
     ports:
-      - '15672:15672'
-      - '5672:5672'
+      - '15672:15672'  # Porta para o console de gerenciamento do RabbitMQ
+      - '5672:5672'    # Porta para AMQP
     environment:
       RABBITMQ_DEFAULT_USER: rabbitmq
       RABBITMQ_DEFAULT_PASS: rabbitmq
-      RABBITMQ_CONFIG_FILE: /etc/rabbitmq/rabbitmq.conf
     volumes:
-      - rabbitmq_data:/var/lib/rabbitmq
-      - rabbitmq_log:/var/log/rabbitmq
+      - rabbitmq_data:/var/lib/rabbitmq  # Persistência de dados
+      - rabbitmq_logs:/var/log/rabbitmq  # Logs do RabbitMQ
+    networks:
+      - mynetwork
 
-      - ./rabbitmq-init.sh:/docker-entrypoint-initdb.d/rabbitmq-init.sh
+networks:
+  mynetwork:
+    driver: bridge
 
 volumes:
   rabbitmq_data:
-  rabbitmq_log:
+    driver: local
+  rabbitmq_logs:
+    driver: local
