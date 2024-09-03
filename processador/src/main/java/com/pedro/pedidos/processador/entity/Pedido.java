@@ -20,18 +20,18 @@ public class Pedido {
     private UUID id = UUID.randomUUID();
     private String cliente;
 
-    @Column(name = "valor_total")
-    private Integer valorTotal;
-    @Column(name = "email_notificacao")
-    private String emailNotificacao;
-
     @OneToMany(mappedBy = "pedido")
     private List<ItemPedido> itens = new ArrayList<>();
+
+    @Column(name = "valor_total")
+    private Double valorTotal;
+
+    @Column(name = "email_notificacao")
+    private String emailNotificacao;
 
     @Enumerated(EnumType.STRING)
     private Status status;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime dataHora = LocalDateTime.now();
-
 }

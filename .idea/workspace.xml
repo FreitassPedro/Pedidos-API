@@ -4,9 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1653806c-8f9b-479a-a70f-a3e05c2405ed" name="Changes" comment=":spearkles: feat: Mapeamento Classes JPA&#10;&#10;- Mapeando ItemPedido, Pedido, Produto&#10;- Antes de Salvar no banco">
+    <list default="true" id="1653806c-8f9b-479a-a70f-a3e05c2405ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notificacao/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notificacao/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/1/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/1/pg_internal.init" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/1247" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/1247" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/1249" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/1249" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/1259" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/1259" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/1259_vm" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/1259_vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/16388" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/16388" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/16391" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/16391" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/16393" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/16393" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/16399" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/16399" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/16411" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/16415" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/16416" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/16417" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/2608" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/2608" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/2610" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/2610" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/2610_vm" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/2610_vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/2619" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/2619" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/2658" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/2658" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/2659" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/2659" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/2662" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/2662" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/2663" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/2663" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/2673" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/2673" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/2674" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/2674" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/2678" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/2678" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/2679" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/2679" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/2696" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/2696" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/2703" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/2703" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/2704" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/2704" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/3455" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/3455" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/pg_internal.init" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/5/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/5/pg_internal.init" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/global/pg_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/global/pg_internal.init" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/global/pg_internal.init" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/pg_wal/000000010000000000000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/pg_xact/0000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/postmaster.pid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notificacao/src/main/java/com/pedro/notificacao/entity/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/notificacao/src/main/java/com/pedro/notificacao/entity/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notificacao/src/main/java/com/pedro/notificacao/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/notificacao/src/main/java/com/pedro/notificacao/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processador/src/main/java/com/pedro/pedidos/processador/entity/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/processador/src/main/java/com/pedro/pedidos/processador/entity/ItemPedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processador/src/main/java/com/pedro/pedidos/processador/entity/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/processador/src/main/java/com/pedro/pedidos/processador/entity/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processador/src/main/java/com/pedro/pedidos/processador/entity/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/processador/src/main/java/com/pedro/pedidos/processador/entity/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processador/src/main/java/com/pedro/pedidos/processador/listener/PedidoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/processador/src/main/java/com/pedro/pedidos/processador/listener/PedidoListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/processador/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/processador/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +110,9 @@
       <recent name="C:\Users\jogui\Documents\Programando\Java\Projetos pedidosApi\processador\src\main\java\com\pedro\pedidos\processador\processador" />
       <recent name="C:\Users\jogui\Documents\Programando\Java\Projetos pedidosApi\notificacao\src\main\java\com\pedro\notificacao" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pedro.pedidos.processador.service" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.PedidosApiApplication">
     <configuration name="NotificacaoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -126,9 +170,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.pedro.pedidos.processador.ProcessadorApplication" />
-        <item itemvalue="Application.NotificacaoApplication" />
         <item itemvalue="Application.PedidosApiApplication" />
+        <item itemvalue="Application.NotificacaoApplication" />
+        <item itemvalue="Application.com.pedro.pedidos.processador.ProcessadorApplication" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -172,5 +216,29 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":spearkles: feat: Mapeamento Classes JPA&#10;&#10;- Mapeando ItemPedido, Pedido, Produto&#10;- Antes de Salvar no banco" />
     <option name="LAST_COMMIT_MESSAGE" value=":spearkles: feat: Mapeamento Classes JPA&#10;&#10;- Mapeando ItemPedido, Pedido, Produto&#10;- Antes de Salvar no banco" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/processador/src/main/java/com/pedro/pedidos/processador/service/PedidoService.java</url>
+          <line>26</line>
+          <properties class="com.pedro.pedidos.processador.service.PedidoService" method="salvarPedido">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/processador/src/main/java/com/pedro/pedidos/processador/listener/PedidoListener.java</url>
+          <line>21</line>
+          <properties class="com.pedro.pedidos.processador.listener.PedidoListener" method="salvarPedido">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -15,9 +15,11 @@ import java.util.UUID;
 @Entity
 @Table(name = "produto")
 public class Produto {
+
     @Id
     private UUID id = UUID.randomUUID();
+
     private String nome;
-    private double valor;
+    private Double valor;
 
 }

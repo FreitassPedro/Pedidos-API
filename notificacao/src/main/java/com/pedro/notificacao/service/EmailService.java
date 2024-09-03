@@ -25,9 +25,12 @@ public class EmailService {
     }
 
     private String gerarMensagem(Pedido pedido) {
-        return String.format("Olá, %s! Seu pedido no valor de R$ %d foi gerado com sucesso." +
-                        "\n O n° do pedido é %s. " +
-                        "\n Status: %s",
+        return String.format("""
+                        Olá, %s! Seu pedido no valor de R$ %s foi gerado com sucesso.\
+
+                         O n° do pedido é %s. \
+
+                         Status: %s""",
                 pedido.getCliente(), pedido.getValorTotal(), pedido.getId(), pedido.getStatus());
     }
 }
