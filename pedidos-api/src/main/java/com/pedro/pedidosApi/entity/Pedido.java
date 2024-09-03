@@ -15,7 +15,7 @@ public class Pedido {
     private UUID id = UUID.randomUUID();
     private String cliente;
 
-    private Integer valorTotal;
+    private Double valorTotal;
     private String emailNotificacao;
 
     private List<ItemPedido> itens = new ArrayList<>();
