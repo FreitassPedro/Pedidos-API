@@ -18,6 +18,10 @@ public class PedidoListener {
 
     @RabbitListener(queues = "${rabbitmq.queue.name}")
     public void enviarNotificacao(Pedido pedido) {
+        if (pedido.getValorTotal() > 1000) {
+            log.error("Valor do pedido muito alto");
+            throw new RuntimeException("Valor do pedido muito alto");
+        }
         emailService.enviarEmail(pedido);
         log.info("Notificação gerada para o pedido: {}", pedido.getId());
     }

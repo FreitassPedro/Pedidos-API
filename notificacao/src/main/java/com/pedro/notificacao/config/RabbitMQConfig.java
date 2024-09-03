@@ -15,6 +15,8 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.Map;
+
 @Configuration
 public class RabbitMQConfig {
 
@@ -23,19 +25,42 @@ public class RabbitMQConfig {
     @Value("${rabbitmq.queue.name}")
     private String queueName;
 
+    @Value("${rabbitmq.exchange.dlx.name}")
+    private String exchangeDlxName;
+    @Value("${rabbitmq.queue.dlq.name}")
+    private String queueDlqName;
+
     @Bean
     public FanoutExchange pedidosExchange() {
         return new FanoutExchange(exchangeName);
     }
 
+    // Dead Letter Exchange (DLX)
+    // Se a mensagem não for processada, ela é enviada para a fila de DLQ para ser processada posteriormente
+    @Bean
+    public FanoutExchange pedidosDlxExchange() {
+        return new FanoutExchange(exchangeDlxName);
+    }
+
     @Bean
     public Queue notificacaoQueue() {
-        return new Queue(queueName);
+        Map<String, Object> arguments = Map.of("x-dead-letter-exchange", exchangeDlxName);
+        return new Queue(queueName, true, false, false, arguments);
+    }
+
+    @Bean
+    public Queue notificacaoDlqQueue() {
+        return new Queue(queueDlqName);
     }
 
     @Bean
     public Binding binding() {
         return BindingBuilder.bind(notificacaoQueue()).to(pedidosExchange());
+    }
+
+    @Bean
+    public Binding bindingDlq() {
+        return BindingBuilder.bind(notificacaoDlqQueue()).to(pedidosDlxExchange());
     }
 
     @Bean

@@ -6,9 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="1653806c-8f9b-479a-a70f-a3e05c2405ed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/16430" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/16430" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/16433" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/16433" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/16435" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/16435" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/16441" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/16441" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/16443" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/16443" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postgres_data/base/16387/16446" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/base/16387/16446" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.postgres_data/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/global/pg_control" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.postgres_data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/pg_wal/000000010000000000000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.postgres_data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/.postgres_data/pg_xact/0000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notificacao/src/main/java/com/pedro/notificacao/config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/notificacao/src/main/java/com/pedro/notificacao/config/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notificacao/src/main/java/com/pedro/notificacao/listener/PedidoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/notificacao/src/main/java/com/pedro/notificacao/listener/PedidoListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notificacao/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notificacao/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/processador/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/processador/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,23 +59,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.NotificacaoApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PedidosApiApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProcessadorApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.com.pedro.pedidos.processador.ProcessadorApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jogui/Documents/Programando/Java/Projetos pedidosApi/processador/src/main/java/com/pedro/pedidos/processador/processador&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;promo.profiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.NotificacaoApplication.executor": "Run",
+    "Application.PedidosApiApplication.executor": "Run",
+    "Application.ProcessadorApplication.executor": "Run",
+    "Application.com.pedro.pedidos.processador.ProcessadorApplication.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jogui/Documents/Programando/Java/Projetos pedidosApi/processador/src/main/java/com/pedro/pedidos/processador/processador",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jogui\Documents\Programando\Java\Projetos pedidosApi\processador\src\main\java\com\pedro\pedidos\processador\processador" />
@@ -75,7 +85,7 @@
       <recent name="com.pedro.pedidos.processador.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PedidosApiApplication">
+  <component name="RunManager" selected="Application.com.pedro.pedidos.processador.ProcessadorApplication">
     <configuration name="NotificacaoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.pedro.notificacao.NotificacaoApplication" />
       <module name="notificacao" />
@@ -131,9 +141,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PedidosApiApplication" />
-        <item itemvalue="Application.NotificacaoApplication" />
         <item itemvalue="Application.com.pedro.pedidos.processador.ProcessadorApplication" />
+        <item itemvalue="Application.NotificacaoApplication" />
+        <item itemvalue="Application.PedidosApiApplication" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
