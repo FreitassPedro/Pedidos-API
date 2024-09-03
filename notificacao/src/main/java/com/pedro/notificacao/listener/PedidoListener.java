@@ -4,6 +4,7 @@ import com.pedro.notificacao.entity.Pedido;
 import com.pedro.notificacao.service.EmailService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Slf4j
@@ -16,7 +17,7 @@ public class PedidoListener {
         this.emailService = emailService;
     }
 
-    @RabbitListener(queues = "${rabbitmq.queue.name}")
+    @RabbitListener(queues = "pedidos.v1.pedido-criado.gerar-notificacao")
     public void enviarNotificacao(Pedido pedido) {
         if (pedido.getValorTotal() > 1000) {
             log.error("Valor do pedido muito alto");
