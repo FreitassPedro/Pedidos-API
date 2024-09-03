@@ -32,9 +32,10 @@ services:
     ports:
       - '5432:5432'  # Porta para o PostgreSQL
     volumes:
-        - .postgres_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
 
 
 volumes:
   rabbitmq_data:
   rabbitmq_logs:
+  .postgres_data: # Criar o volume explicitamente
