@@ -29,6 +29,7 @@ services:
     environment:
       POSTGRES_USER: postgres  # Defina o usuário postgres
       POSTGRES_PASSWORD: postgres  # Defina a senha do usuário postgres
+      POSTGRES_DB: postgres  # Defina o nome do banco de dados
     ports:
       - '5432:5432'  # Porta para o PostgreSQL
     volumes:
@@ -36,6 +37,6 @@ services:
 
 
 volumes:
+  postgres_data:
   rabbitmq_data:
   rabbitmq_logs:
-  .postgres_data: # Criar o volume explicitamente
